@@ -1,9 +1,14 @@
-import 'dart:convert';
+// import 'dart:convert';
 
 import 'datajson.dart';
 
 void main() {
-  Map<String, dynamic> data = json.decode(Data.jsonData);
+
+  ///////- from string to json and then : useful in http request
+  // Map<String, dynamic> data = json.decode(Data.jsonData);
+
+  //////- direct from json : useful in manually parsing
+  final data = Data.json;
 
   List<dynamic> rest = data["data"] as List;
 
