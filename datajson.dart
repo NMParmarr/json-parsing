@@ -13,7 +13,7 @@ class Data {
 
 
   ///for parsing data manually : such a local database
-  static const json = {
+  static Map json = {
     "data": [
       {"name": "Nayan", "age": 18},
       {"name": "Gopal", "age": 18},
